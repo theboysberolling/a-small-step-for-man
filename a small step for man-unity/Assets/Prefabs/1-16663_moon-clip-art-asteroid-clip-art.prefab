@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 4962172858590648946}
   - component: {fileID: 4962172858590648947}
   - component: {fileID: 4962172858590648948}
-  - component: {fileID: -8265799933723284494}
-  - component: {fileID: 4962172858590648949}
-  - component: {fileID: 4962172858590648950}
+  - component: {fileID: -1827306890362178393}
+  - component: {fileID: -5078933189757869150}
   m_Layer: 0
   m_Name: 1-16663_moon-clip-art-asteroid-clip-art
   m_TagString: Untagged
@@ -136,7 +135,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.4, y: 6.8}
   m_EdgeRadius: 0
---- !u!114 &-8265799933723284494
+--- !u!114 &-1827306890362178393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f50affe6174a904aae7b99f85ace95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: -10
-  velocity: -10
+  maxSpeed: 10
+  velocity: 1
   rb: {fileID: 4962172858590648947}
---- !u!114 &4962172858590648949
+--- !u!114 &-5078933189757869150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,17 +162,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6a101131d9f8c4cb70eec2891a3ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4962172858590648950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4962172858590648951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e95df1d7775184586bfe82c4b8859e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 4962172858590648951}
-  respawnTime: 1

@@ -22,7 +22,7 @@ public class objectMovment1 : MonoBehaviour
         {
             rb.velocity = (new Vector2 (velocity, maxSpeed));
         }
-        // rb.AddForce(new Vector2 (Xaxis, 0f));
+        rb.AddForce(new Vector2 (-velocity, 0f));
     }
 }
 

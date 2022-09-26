@@ -15,7 +15,7 @@ public class objectDestroy : MonoBehaviour
     {
         if (transform.position.x <= -15)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

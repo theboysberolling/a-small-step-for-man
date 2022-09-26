@@ -1,31 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class ObjectSpawn : MonoBehaviour
 {
-    [SerializeField] private GameObject asteroidPrefab;
-    [SerializeField] private float respawnTime = 1.0f;
+    [SerializeField] public GameObject asteroidPrefab;
+    [SerializeField] private float manypersecond = 5;
+   
+    private float manyper;
+    
     private Vector2 screenBounds;
     // Start is called before the first frame update
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-            StartCoroutine(asteroidWave());
+        StartCoroutine(asteroidWave());
     }
 
     // Update is called once per frame
     private void spawnEnemy()
     {
+        //Vector2 randpos = new Vector2(screenBounds.x+ Random.Range(0,screenBounds.x), Random.Range(0, screenBounds.y));
+        //Instantiate(asteroidPrefab, randpos, Quaternion.identity);
+        // Destroy(gameObject);
         GameObject a = Instantiate (asteroidPrefab) as GameObject;
-        a.transform.position = new Vector2(screenBounds.x , Random.Range(-screenBounds.y, screenBounds.y));
+        a.transform.position = new Vector2(screenBounds.x+Random.Range(0, screenBounds.x), Random.Range(0, screenBounds.y));
+        
     }
     IEnumerator asteroidWave()
     {
         while (true)
         {
-            yield return new WaitForSeconds(respawnTime);
-            spawnEnemy();
+            
+            for (manyper=0; manyper<= 1; manyper+= 1/ manypersecond)
+            {
+                yield return new WaitForSeconds(1/manypersecond);
+                spawnEnemy();
+            }
+         
         }
     }
 }

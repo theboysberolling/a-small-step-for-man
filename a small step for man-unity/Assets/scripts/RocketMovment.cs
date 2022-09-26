@@ -6,8 +6,10 @@ using UnityEngine;
 public class RocketMovment : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float maxVelocity = 3;
-    public float rotationSpeed = 3;
+    public float maxVelocity ;
+    public float acceleration;
+    public float rotationSpeed ;
+    
     #region Monobehaviour API
     private void Start()
     {
@@ -20,7 +22,7 @@ public class RocketMovment : MonoBehaviour
 
         float xAxis = Input.GetAxis("Horizontal");
 
-        ThrustForward(yAxis);
+        ThrustForward(yAxis* acceleration);
 
         Rotate(transform, xAxis * - rotationSpeed);
     }
