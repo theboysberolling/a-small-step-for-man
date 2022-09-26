@@ -965,6 +965,7 @@ GameObject:
   - component: {fileID: 935218463}
   - component: {fileID: 935218456}
   - component: {fileID: 935218458}
+  - component: {fileID: 935218466}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -1216,6 +1217,21 @@ CapsuleCollider2D:
   m_Offset: {x: 1.0811908, y: -2.4062717}
   m_Size: {x: 2.2311306, y: 4.5153403}
   m_Direction: 0
+--- !u!114 &935218466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935218449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d662ae34ef6e4408db9ee745aa5053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVelocity: 0
+  acceleration: 0
+  rotationSpeed: 0
 --- !u!1 &995514436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
-  manypersecond: 5
+  manypersecond: 1
 --- !u!1001 &2097817773
 PrefabInstance:
   m_ObjectHideFlags: 0
