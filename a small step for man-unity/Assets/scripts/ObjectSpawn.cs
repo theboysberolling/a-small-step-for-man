@@ -6,14 +6,15 @@ using UnityEngine;
 public class ObjectSpawn : MonoBehaviour
 {
     [SerializeField] public GameObject asteroidPrefab;
-    [SerializeField] private float manypersecond = 5;
-   
+    [SerializeField] public static float manypersecond = 1;
+    
     private float manyper;
     
     private Vector2 screenBounds;
+    
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(asteroidWave());
     }
@@ -25,7 +26,7 @@ public class ObjectSpawn : MonoBehaviour
         //Instantiate(asteroidPrefab, randpos, Quaternion.identity);
         // Destroy(gameObject);
         GameObject a = Instantiate (asteroidPrefab) as GameObject;
-        a.transform.position = new Vector2(screenBounds.x+Random.Range(0, screenBounds.x), Random.Range(0, screenBounds.y));
+        a.transform.position = new Vector2(screenBounds.x+Random.Range(0, screenBounds.x), Random.Range(Mathf.Max(0,gameObject.transform.position.y-20), gameObject.transform.position.y+120));
         
     }
     IEnumerator asteroidWave()

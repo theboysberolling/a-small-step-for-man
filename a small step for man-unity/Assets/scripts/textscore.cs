@@ -10,9 +10,10 @@ public class textscore : MonoBehaviour
 
     public Rigidbody2D rb;
     public TMP_Text txt;
-    public float heightoincrementscore;
+    public float heightoincrementscore=5;
     private int currentscore = 0;
     private float initialheight;
+    public float maxasteroid_per_seconds = 60;
     void Start()
     {
         
@@ -27,5 +28,7 @@ public class textscore : MonoBehaviour
     {
         txt.text = "Score : " + currentscore;
         currentscore =(int)((0.5+rb.transform.position.y-initialheight)/ heightoincrementscore);
+
+        ObjectSpawn.manypersecond = 1 / 1 + Mathf.Pow(1.05f, -currentscore- maxasteroid_per_seconds/2f) * maxasteroid_per_seconds+Mathf.Sin(currentscore/4)*4;
     }
 }

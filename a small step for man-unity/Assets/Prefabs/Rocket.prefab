@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 8388357874727693011}
   - component: {fileID: 8388357874727693012}
   - component: {fileID: 8388357874727693014}
+  - component: {fileID: 1656083229268223670}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -508,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxVelocity: 6
-  acceleration: 2
+  acceleration: 3
   rotationSpeed: 0.5
 --- !u!114 &8388357874727693014
 MonoBehaviour:
@@ -522,6 +523,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffcacb58acc7f424ea9fffdf44e3a5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1656083229268223670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8388357874727693021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e95df1d7775184586bfe82c4b8859e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
 --- !u!1 &8388357875639441308
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,4 +686,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8388357874727693013}
   txt: {fileID: 8388357875639441310}
-  heightoincrementscore: 0
+  heightoincrementscore: 5
