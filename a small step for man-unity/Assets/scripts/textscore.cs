@@ -29,6 +29,6 @@ public class textscore : MonoBehaviour
         txt.text = "Score : " + currentscore;
         currentscore =(int)((0.5+rb.transform.position.y-initialheight)/ heightoincrementscore);
 
-        ObjectSpawn.manypersecond = 1 / 1 + Mathf.Pow(1.05f, -currentscore- maxasteroid_per_seconds/2f) * maxasteroid_per_seconds+Mathf.Sin(currentscore/4)*4;
+        ObjectSpawn.manypersecond = Mathf.Max(1,0.1f / 1 + Mathf.Pow(1.03f, -currentscore- maxasteroid_per_seconds) * maxasteroid_per_seconds+Mathf.Sin(currentscore/4)*4);
     }
 }
