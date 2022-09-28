@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4962172858590648948}
   - component: {fileID: -1827306890362178393}
   - component: {fileID: -5078933189757869150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 1-16663_moon-clip-art-asteroid-clip-art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

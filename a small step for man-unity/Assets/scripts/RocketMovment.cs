@@ -26,6 +26,15 @@ public class RocketMovment : MonoBehaviour
 
         Rotate(transform, xAxis * - rotationSpeed);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+
+            Destroy(gameObject);
+            Application.Quit();
+        }
+    }
     #endregion
 
     #region Maneuvering API

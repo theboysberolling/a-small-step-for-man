@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
-  manypersecond: 5
+  manypersecond: 1
 --- !u!1001 &2097817773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1740,11 +1740,20 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4962172858590648948, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
       propertyPath: m_Name
       value: 1-16663_moon-clip-art-asteroid-clip-art
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -1827306890362178393, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
 --- !u!4 &2097817774 stripped
 Transform:
@@ -1756,18 +1765,6 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 4962172858590648947, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
   m_PrefabInstance: {fileID: 2097817773}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2097817783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1040220270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb6a101131d9f8c4cb70eec2891a3ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2097817784
 MonoBehaviour:
   m_ObjectHideFlags: 0
