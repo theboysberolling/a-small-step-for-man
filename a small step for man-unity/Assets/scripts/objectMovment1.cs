@@ -6,7 +6,7 @@ using UnityEngine;
 public class objectMovment1 : MonoBehaviour
 {
     public float maxSpeed = 10f;
-    public float velocity = 1f;
+    public float velocity;
     [SerializeField] private Rigidbody2D rb;
     public  Rigidbody2D rocket;
     private bool first = true;
@@ -24,7 +24,7 @@ public class objectMovment1 : MonoBehaviour
     {   if (first)
         {
             //rb= GetComponent<Rigidbody2D>();
-      
+            velocity = Random.Range(0.5f, 1.5f);
             if (gameObject.transform.position.x > rocket.transform.position.x)
             {
                 velocity = velocity* - 1f;
