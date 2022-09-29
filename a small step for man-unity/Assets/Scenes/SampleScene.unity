@@ -448,6 +448,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1886989474 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+  m_PrefabInstance: {fileID: 8388357874463598540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2097817773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -534,28 +539,36 @@ PrefabInstance:
       value: 5.92572
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1886989474}
+    - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: maxVelocity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: acceleration
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+      propertyPath: rotationSpeed
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_Mass
-      value: 0.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
-      propertyPath: m_LinearDrag
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_AngularDrag
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693014, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_Enabled
