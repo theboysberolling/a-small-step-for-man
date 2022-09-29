@@ -14,6 +14,7 @@ public class textscore : MonoBehaviour
     private int currentscore = 0;
     private float initialheight;
     public float maxasteroid_per_seconds = 60;
+    private int count = 0;
     void Start()
     {
         
@@ -30,5 +31,23 @@ public class textscore : MonoBehaviour
         currentscore =(int)((0.5+rb.transform.position.y-initialheight)/ heightoincrementscore);
 
         ObjectSpawn.manypersecond = Mathf.Max(1,0.1f / 1 + Mathf.Pow(1.03f, -currentscore- maxasteroid_per_seconds) * maxasteroid_per_seconds+Mathf.Sin(currentscore/4)*4);
+       
+        if (count == 0)
+        {
+            
+            if (currentscore == 100)
+            {
+                Debug.Log("you have won");
+                count++;
+                
+
+            }
+            return;
+        }
+
     }
+    
+    
+      
+    
 }
