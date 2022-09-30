@@ -31,12 +31,12 @@ public class ObjectSpawn : MonoBehaviour
 
         if( Random.Range(0, 100) >= 50)
         {
-            a.transform.position = new Vector2(30f + gameObject.transform.position.x+ Random.Range(0,30), Random.Range(Mathf.Max(0, gameObject.transform.position.y - 20), gameObject.transform.position.y + 120));
+            a.transform.position = new Vector2(20f + gameObject.transform.position.x+ Random.Range(0,30), Random.Range(Mathf.Max(0, gameObject.transform.position.y - 20), gameObject.transform.position.y + 90));
 
         }
         else
         {
-            a.transform.position = new Vector2(-30f + gameObject.transform.position.x - Random.Range(0, 30), Random.Range(Mathf.Max(0, gameObject.transform.position.y - 20), gameObject.transform.position.y + 120));
+            a.transform.position = new Vector2(-20f + gameObject.transform.position.x - Random.Range(0, 30), Random.Range(Mathf.Max(0, gameObject.transform.position.y - 20), gameObject.transform.position.y + 90));
 
         }
 

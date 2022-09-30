@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f50affe6174a904aae7b99f85ace95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 5
   velocity: 1
   rb: {fileID: 4962172858590648947}
-  rocket: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+  rocket: {fileID: 6099245976296309371, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
