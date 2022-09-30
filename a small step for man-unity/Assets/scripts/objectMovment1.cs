@@ -17,7 +17,7 @@ public class objectMovment1 : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     //adding force to the object
     void FixedUpdate()

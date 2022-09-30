@@ -15,7 +15,8 @@ public class RocketMovment : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    private void Update()
+   
+    private void FixedUpdate()
     {
         
         float yAxis = Input.GetAxis("Vertical");
