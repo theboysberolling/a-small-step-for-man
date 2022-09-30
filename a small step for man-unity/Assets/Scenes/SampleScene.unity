@@ -505,8 +505,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4962172858590648947, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962172858590648947, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
       propertyPath: m_Constraints
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962172858590648947, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4962172858590648948, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
       propertyPath: m_IsTrigger
@@ -519,6 +527,10 @@ PrefabInstance:
     - target: {fileID: 4962172858590648951, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939631436027399484, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: velocity
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
@@ -544,11 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 1886989474}
     - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: maxVelocity
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: acceleration
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693012, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: rotationSpeed
@@ -556,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_Mass
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693013, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_LinearDrag
@@ -625,6 +637,10 @@ PrefabInstance:
     - target: {fileID: 8388357875639441304, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: heightoincrementscore
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388357875639441304, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
+      propertyPath: maxasteroid_per_seconds
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
