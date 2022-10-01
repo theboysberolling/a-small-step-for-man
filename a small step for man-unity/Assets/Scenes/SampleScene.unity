@@ -826,6 +826,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4962172858590648946, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4962172858590648947, guid: cc6349bb5bda6444aa15ae4d11334bcb, type: 3}
       propertyPath: m_Mass
       value: 0.1
@@ -930,7 +934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693017, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_Color.a
-      value: 0.4745098
+      value: 0.99215686
       objectReference: {fileID: 0}
     - target: {fileID: 8388357874727693018, guid: 7a00b75cdb31cee4caaaaa39bbd53a88, type: 3}
       propertyPath: m_RootOrder

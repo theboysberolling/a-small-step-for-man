@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class RocketMovment : MonoBehaviour
 {
@@ -31,9 +31,8 @@ public class RocketMovment : MonoBehaviour
     {
         if (collision.gameObject.layer == 7)
         {
+            SceneManager.LoadScene("menu");
 
-            Destroy(gameObject);
-            Application.Quit();
         }
         else if (collision.gameObject.layer == 8)
         {
