@@ -35,11 +35,17 @@ public class RocketMovment : MonoBehaviour
             Destroy(gameObject);
             Application.Quit();
         }
+        else if (collision.gameObject.layer == 8)
+        {
+
+            rb.velocity = new Vector2(-rb.velocity.x, rb.velocity.y);
+     
+        }
     }
     #endregion
 
 
-
+    
     #region Maneuvering API
 
     private void ClampVelocity()

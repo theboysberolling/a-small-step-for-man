@@ -24,7 +24,7 @@ public class objectMovment1 : MonoBehaviour
     {   if (first)
         {
             //rb= GetComponent<Rigidbody2D>();
-            velocity = Random.Range(0.5f, 1.5f);
+            velocity = Random.Range(0.3f, 0.8f);
             if (gameObject.transform.position.x > rocket.transform.position.x)
             {
                 velocity = velocity* - 1f;
