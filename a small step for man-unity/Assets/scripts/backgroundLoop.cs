@@ -17,7 +17,12 @@ public class backgroundLoop : MonoBehaviour
         foreach (GameObject obj in levels)
         {
             loadChildObjects(obj);
+            
+
         }
+       
+
+
     }
     void loadChildObjects(GameObject obj)
     {
@@ -33,6 +38,7 @@ public class backgroundLoop : MonoBehaviour
         }
         Destroy(clone);
         Destroy(obj.GetComponent<SpriteRenderer>());
+
     }
     void repositionChildObjects(GameObject obj)
     {
@@ -53,6 +59,8 @@ public class backgroundLoop : MonoBehaviour
                 lastChild.transform.position = new Vector3(firstChild.transform.position.x,firstChild.transform.position.y - halfObjectHeight * 2, firstChild.transform.position.z);
             }
         }
+
+
     }
     void Update()
     {
