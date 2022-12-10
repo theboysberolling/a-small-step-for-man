@@ -11,7 +11,7 @@ public class textscore : MonoBehaviour
     public Rigidbody2D rb;
     public TMP_Text txt;
     public float heightoincrementscore=5;
-    private int currentscore = 0;
+    public static int currentscore = 0;
     private float initialheight;
     public float maxasteroid_per_seconds = 60;
     //count is for if timer

@@ -9,7 +9,7 @@ public class backgroundLoop : MonoBehaviour
     private Vector2 screenBounds;
     public float choke;
     public float scrollSpeed;
-
+    private float score = textscore.currentscore;
     void Start()
     {
         mainCamera = gameObject.GetComponent<Camera>();
