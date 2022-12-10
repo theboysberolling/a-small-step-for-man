@@ -1,6 +1,8 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Unity.Profiling;
 using UnityEngine;
 
 public class ObjectSpawn : MonoBehaviour
@@ -9,7 +11,7 @@ public class ObjectSpawn : MonoBehaviour
     [SerializeField] public static float manypersecond = 1;
     
     private float manyper;
-    
+    float scale;
     private Vector2 screenBounds;
     
     // Start is called before the first frame update
@@ -39,7 +41,8 @@ public class ObjectSpawn : MonoBehaviour
             a.transform.position = new Vector2(-20f + gameObject.transform.position.x - Random.Range(0, 30), Random.Range(Mathf.Max(0, gameObject.transform.position.y - 20), gameObject.transform.position.y + 120));
 
         }
-
+        scale = Random.Range(0, 0.3f);
+        a.transform.localScale += new Vector3(scale, scale, scale);
 
         Destroy(a, 20);
     }
