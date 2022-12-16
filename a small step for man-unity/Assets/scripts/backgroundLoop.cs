@@ -20,10 +20,8 @@ public class backgroundLoop : MonoBehaviour
             
 
         }
-       
-
-
     }
+
     void loadChildObjects(GameObject obj)
     {
         float objectHeight = obj.GetComponent<SpriteRenderer>().bounds.size.y - choke;
@@ -59,8 +57,6 @@ public class backgroundLoop : MonoBehaviour
                 lastChild.transform.position = new Vector3(firstChild.transform.position.x,firstChild.transform.position.y - halfObjectHeight * 2, firstChild.transform.position.z);
             }
         }
-
-
     }
     void Update()
     {
